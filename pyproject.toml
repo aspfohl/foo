@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "adhoc-venv"
+version = "0.0.1"
+description = "For Ad-hoc notebook running"
+authors = ["Anna annalsmith14@gmail.com"]
+
+[tool.poetry.dependencies]
+python = "^3.7.2"
+jupyter = "^1.0"
+pandas = "^1.0"
+numpy = "^1.18"
+scikit-learn = "^0.22.2"
+matplotlib = "^3.2"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
