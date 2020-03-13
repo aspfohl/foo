@@ -1,5 +1,5 @@
 # adhoc-venv
-Bare poetry venv for running pre-dev/adhoc things in jupyter notebooks
+Poetry virtual environment with very basic data science python packages for running adhoc & exploratory things in jupyter notebooks
 
 ## Setup
 
@@ -14,29 +14,20 @@ To create venv:
 $ make venv
 ```
 
-
-To activate:
-
-```bash
-$ source ./.venv/bin/activate
-```
-
-To deactivate:
-
-```bash
-$ deactivate
-```
-
-Adding new packages is super easy:
-```bash
-$ source ./.venv/bin/activate
-...
-(venv) $ poetry add pandas
-```
-
-
-Opening up jupyter notebooks in the venv:
+Opening up jupyter notebooks in the python virtual environment:
 
 ```bash
 $ make run
 ```
+
+
+Adding new packages is super easy. Activate the environment and use the `add` command. For example:
+```bash
+$ source ./.venv/bin/activate
+(venv) $ poetry add pandas
+(venv) $ deactivate
+$ 
+```
+
+
+
