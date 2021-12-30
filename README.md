@@ -1,12 +1,12 @@
-# adhoc-venv
-Poetry virtual environment with very basic data science python packages for running adhoc & exploratory things in jupyter notebooks
+# foo
+Template python repo with poetry virtual environment, adhoc jupyter notebooks, VSCode config, and standard python development libraries. To get started, find and replace all instances of "foo" with your library name. Make sure to also rename the main folder.
 
 ## Setup
 
-Install [poetry](https://python-poetry.org/docs/)
-
-
-## Running
+Requires:
+* [python3.9](https://www.python.org/downloads/release/python-397/)
+* [poetry](https://python-poetry.org/docs/)
+* (recommended) [vscode](https://code.visualstudio.com/)
 
 To create venv:
 
@@ -23,9 +23,7 @@ $ make run
 
 Adding new packages is super easy. Activate the environment and use the `add` command. For example:
 ```bash
-$ source ./.venv/bin/activate
 (venv) $ poetry add pandas
-(venv) $ deactivate
 $ 
 ```
 

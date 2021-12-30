@@ -1,0 +1,28 @@
+{
+    "python.editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=99"
+    ],
+    "editor.rulers": [99],
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "python.pythonPath": ".venvs/foo/bin/python",
+    "window.zoomLevel": 0,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableCommitSigning": true,
+    "spellright.language": ["en"],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "python",
+        "sql",
+        "yaml",
+    ],
+    "extensions.ignoreRecommendations": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "git.enableSmartCommit": true,
+    "files.trimTrailingWhitespace": true
+}

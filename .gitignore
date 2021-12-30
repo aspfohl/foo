@@ -1,6 +1,3 @@
-# Don't actually commit anything in adhoc
-adhoc/*.ipynb
-adhoc/*.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

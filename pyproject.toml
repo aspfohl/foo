@@ -1,16 +1,25 @@
 [tool.poetry]
-name = "adhoc-venv"
+name = "foo"
 version = "0.0.1"
-description = "For Ad-hoc notebook running"
-authors = ["Anna annalsmith14@gmail.com"]
+description = "TODO - this is a basic template"
+authors = ["Anna annaspfohl@gmail.com"]
 
 [tool.poetry.dependencies]
-python = "^3.7.2"
-jupyter = "^1.0"
-pandas = "^1.0"
-numpy = "^1.18"
-scikit-learn = "^0.22.2"
-matplotlib = "^3.2"
+python = ">=3.9.6,<3.11"
+jupyter = "^1.0.0"
+pandas = "^1.3.5"
+numpy = "^1.21.5"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+black = "^21.12b0"
+isort = "^5.10.1"
+pylint = "^2.12.2"
+flake8 = "^4.0.1"
+mypy = "^0.930"
+colorlog = "^6.6.0"
 
 [build-system]
 requires = ["poetry>=1.0"]
