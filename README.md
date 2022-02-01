@@ -29,7 +29,7 @@ $ make venv
 Opening up jupyter notebooks in the python virtual environment:
 
 ```bash
-$ make run
+$ make notebook
 ```
 
 
