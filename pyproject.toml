@@ -6,10 +6,10 @@ authors = ["Anna <annaspfohl@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.9.6,<3.11"
-jupyter = "^1.0.0"
 pandas = "^1.3.5"
 numpy = "^1.21.5"
 matplotlib = "^3.5.1"
+jupyter = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"

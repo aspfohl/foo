@@ -40,5 +40,6 @@ test:
 	echo "Checking linting"
 	poetry run flake8 --exit-zero ${PROJECT_NAME} ${TEST_FOLDER}
 	# poetry run pylint ${PROJECT_NAME} ${TEST_FOLDER}
+	# TODO: get these running
 	poetry run mypy --follow-imports=silent --package ${PROJECT_NAME}
 	poetry run pycodestyle ${PROJECT_NAME} ${TEST_FOLDER}
