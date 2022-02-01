@@ -4,15 +4,21 @@
     "python.formatting.blackArgs": [
         "--line-length=99"
     ],
-    "editor.rulers": [99],
+    "editor.rulers": [
+        88
+    ],
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": true,
-    "python.pythonPath": ".venvs/foo/bin/python",
+    "python.envFile": "${workspaceRoot}/.venv",
+    "python.pythonPath": ".venv/bin/python",
+    "python.linting.pylintPath": ".venv/bin/pylint",
     "window.zoomLevel": 0,
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableCommitSigning": true,
-    "spellright.language": ["en"],
+    "spellright.language": [
+        "en"
+    ],
     "spellright.documentTypes": [
         "markdown",
         "latex",
@@ -24,5 +30,11 @@
     "extensions.ignoreRecommendations": false,
     "workbench.startupEditor": "newUntitledFile",
     "git.enableSmartCommit": true,
-    "files.trimTrailingWhitespace": true
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true
 }
