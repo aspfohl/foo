@@ -22,6 +22,22 @@ flake8 = "^4.0.1"
 mypy = "^0.930"
 pycodestyle = "^2.8.0"
 
+[tools.flake8]
+ignore="E203,W503,F401"
+
+[tool.black]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.venv
+  | _build
+  | build
+  | dist
+)/
+'''
+
 [tool.isort]
 profile = "black"
 

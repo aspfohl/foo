@@ -1,17 +1,21 @@
 {
     "python.editor.formatOnSave": true,
     "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length=99"
-    ],
     "editor.rulers": [
         88
     ],
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.*_cache": true,
+        ".has-*": true,
+        "dist": true,
+        "build": true,
+        "*.egg-info": true,
+    },
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": true,
     "python.envFile": "${workspaceRoot}/.venv",
     "python.pythonPath": ".venv/bin/python",
-    "python.linting.pylintPath": ".venv/bin/pylint",
     "window.zoomLevel": 0,
     "git.autofetch": true,
     "git.confirmSync": false,
@@ -30,11 +34,25 @@
     "extensions.ignoreRecommendations": false,
     "workbench.startupEditor": "newUntitledFile",
     "git.enableSmartCommit": true,
-    "python.linting.enabled": true,
     "python.linting.lintOnSave": true,
-    "files.trimTrailingWhitespace": true,
     "python.linting.pylintEnabled": true,
-    "python.linting.pycodestyleEnabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--follow-imports=silent",
+        "--show-column-numbers",
+        "--ignore-missing-imports"
+    ],
     "python.linting.flake8Enabled": true,
-    "python.linting.mypyEnabled": true
+    "python.linting.flake8Args": [
+        "--config",
+        "${workspaceRoot}/pyproject.toml"
+    ],
+    "python.formatting.blackArgs": [
+        "--config",
+        "${workspaceRoot}/pyproject.toml"
+    ],
+    "python.sortImports.args": [
+        "--settings-path",
+        "${workspaceFolder}/pyproject.toml"
+    ],
 }
